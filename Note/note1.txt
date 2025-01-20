@@ -1,0 +1,22 @@
+SSL
+chứng chỉ SSL
+chạy được https
+local -> máy tính đang dùng để chạy thử (debug)
+vps -> server web
+SSL
+certbot -> SSL free cho bạn nào muốn build một trang web tiết kiệm chi phí
+none GUI
+không có giao diện
+chạy trên command line
+VPS
+Hosting
+Local
+
+Angular framework của Google (công ty mẹ là Alphabet)
+React là library của Facebook (Meta)
+Vue: một cá nhân nào đó đã tạo ra
+Trong một dự án dùng Angular thì người ta dùng TypeScript nhiều hơn JavaScript
+Angular + TypeScript (VSCode)
+
+
+
