@@ -6,6 +6,7 @@ namespace QuanLySanPham.Models
   public class Product
   {
     // mã định danh
+    [Key]
     public int Id { get; set; }
     [Required]
     //[DisplayName("Tên sản phẩm")]
