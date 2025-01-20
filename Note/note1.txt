@@ -17,6 +17,10 @@ React là library của Facebook (Meta)
 Vue: một cá nhân nào đó đã tạo ra
 Trong một dự án dùng Angular thì người ta dùng TypeScript nhiều hơn JavaScript
 Angular + TypeScript (VSCode)
+tool show đóng góp -> ảo
+tạo bằng bot
+
+"ChuoiKetNoi": "server=.;database=;user id=sa;password=;TrustServerCertificate=true"
 
 
 
