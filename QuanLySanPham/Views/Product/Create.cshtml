@@ -1,0 +1,39 @@
+﻿@using QuanLySanPham.Models
+@model Product
+
+@{
+  ViewData["Title"] = "Thêm Sản Phẩm Mới";
+}
+
+@* <div class="container mt-3">
+  <h2>@ViewData["Title"]</h2>
+  <form asp-action="Create" method="post">
+    <div class="form-group">
+      <label for="ProductName">Tên Sản Phẩm</label>
+      <input type="text" class="form-control" id="ProductName" name="ProductName" placeholder="Nhập tên sản phẩm">
+    </div>
+    <div class="form-group">
+      <label for="Price">Giá</label>
+      <input type="number" class="form-control" id="Price" name="Price" placeholder="Nhập giá sản phẩm">
+    </div>
+    <button type="submit" class="btn btn-primary">Thêm Mới</button>
+  </form>
+</div> *@
+
+<div class="container mt-3">
+  <h2>@ViewData["Title"]</h2>
+  <div class="shadow p-3 mb-5 bg-light rounded">
+    <form asp-action="Create" method="post">
+      <div class="flex-row">
+        <label asp-for="ProductName" class="col-form-label-lg"></label>
+        <input asp-for="ProductName" class="form-control" />
+        <span asp-validation-for="ProductName" class="text-danger"></span>
+      </div>
+      <div class="flex-row">
+        <label asp-for="Price" class="col-form-label-lg"></label>
+        <input asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+Chia task việc
+cấp trên sẽ chia task cho nhân viên
+
+- Làm web dùng để đăng hình hoặc là tải hình ảnh về -> có thể chúng ta sẽ làm một cái blog bằng core mvc
+view
+component
+
+codeblock c++ sublimetext
+vscode -> cài c++ trong win hệ điều hành
+!=
+(dấu khác)
+
+gpt4
+
+Windowform -> WPF
+Windowform -> WebForm
+WebForm -> .net framework
+asp.net core mvc
+html css javascript + c#
+
+xamarin -> MAUI (code đa nền tảng cho các ứng dụng mobile: ios android ...)
+
+cơ chế component trong blazor
+tag (thẻ)
+dùng như thẻ html
+
+right -> end
+
+css
+flex space beetwen
+cách đều các item
+
+header
+main
+footer
+
+
