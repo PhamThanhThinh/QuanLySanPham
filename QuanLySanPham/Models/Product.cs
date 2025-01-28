@@ -10,7 +10,7 @@ namespace QuanLySanPham.Models
     public int Id { get; set; }
     [Required]
     //[DisplayName("Tên sản phẩm")]
-    [DisplayName("Ten san pham")]
+    [DisplayName("Tên sản phẩm")]
     public string ProductName { get; set; }
     [Required]
     public double Price { get; set; }

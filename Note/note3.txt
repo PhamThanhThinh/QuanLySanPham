@@ -1,0 +1,28 @@
+.net framework mvc
+.net core mvc
+blazor (component)
+component - view
+library: react
+framework: .net, bootstrap, angular
+
+Project Manager (kiếm job về cho bộ phận và quản lý tiến độ project, nói chuyện với khách hàng - QA)
+Technycol Manager: phụ trách project dùng công nghệ gì, review code, ...
+TM
+
+C# (.NET Framework)
+Java (có nhiều framework, spring boot, )
+
+C# hỗ trợ đầy đủ các tính năng
+
+thu tiền gas (Nhật, Hàn)
+thu tiền điện, nước
+
+add-migration mo-ta
+
+dark -> đen
+light -> trắng
+warning -> vàng
+primary -> xanh da trời
+info -> xanh dương nhạt
+
+

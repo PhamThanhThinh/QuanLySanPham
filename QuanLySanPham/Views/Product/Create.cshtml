@@ -31,8 +31,19 @@
       </div>
       <div class="flex-row">
         <label asp-for="Price" class="col-form-label-lg"></label>
-        <input asp-for="Price" class="form-control" />
+        <input asp-for="Price" class="form-control" type="number" />
         <span asp-validation-for="Price" class="text-danger"></span>
+      </div>
+      @* Quantity *@
+      <div class="flex-row">
+        <label asp-for="Quantity" class="col-form-label-lg"></label>
+        <input asp-for="Quantity" class="form-control" type="number" />
+        <span asp-validation-for="Quantity" class="text-danger"></span>
+      </div>
+      <div class="flex-row mt-2">
+        @* <button type="button" value="Create" class="btn btn-primary">Create</button> *@
+        <input type="button" value="Create" class="btn btn-primary" />
+        <input type="button" asp-action="Index" value="Xem danh sách sản phẩm" class="btn btn-success" />
       </div>
     </form>
   </div>

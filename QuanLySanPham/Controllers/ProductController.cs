@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using QuanLySanPham.Models;
 using QuanLySanPham.Repositories;
 
 namespace QuanLySanPham.Controllers
@@ -23,6 +24,19 @@ namespace QuanLySanPham.Controllers
       return View();
     }
     //public IActionResult Details() { }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Create([Bind("Id, ProductName, Price, Quantity")] Product product)
+    {
+      if (ModelState.IsValid)
+      {
+        await _unitOfWork.ProductRepository.Add(product);
+        await _unitOfWork.SaveChangesAsync();
+        return RedirectToAction("Index");
+      }
+      return View(product);
+    }
 
   }
 }
