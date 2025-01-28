@@ -24,5 +24,5 @@ light -> trắng
 warning -> vàng
 primary -> xanh da trời
 info -> xanh dương nhạt
-
+component
 

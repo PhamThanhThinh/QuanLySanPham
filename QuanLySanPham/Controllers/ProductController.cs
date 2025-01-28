@@ -38,5 +38,35 @@ namespace QuanLySanPham.Controllers
       return View(product);
     }
 
+    public async Task<IActionResult> Edit(int id)
+    {
+      if (id == 0)
+      {
+        return View();
+      }
+      var product = await _unitOfWork.ProductRepository.GetProductById(id);
+      if (product == null)
+      {
+        return View();
+      }
+      return View(product);
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Edit(int id, [Bind("Id, ProductName, Price, Quantity")] Product product)
+    {
+      if (id != product.Id)
+      {
+        return View();
+      }
+      if (ModelState.IsValid)
+      {
+        await _unitOfWork.ProductRepository.Update(product);
+        await _unitOfWork.SaveChangesAsync();
+        return RedirectToAction("Index");
+      }
+      return View(product);
+    }
   }
 }
