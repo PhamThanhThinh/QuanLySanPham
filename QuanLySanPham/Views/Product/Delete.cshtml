@@ -2,36 +2,35 @@
 @model Product
 
 @{
-  ViewData["Title"] = "Sửa Sản Phẩm";
+  ViewData["Title"] = "Xóa Sản Phẩm";
 }
 
 <div class="container mt-3">
   <h2>@ViewData["Title"]</h2>
   <div class="shadow p-3 mb-5 bg-light rounded">
-    <form asp-action="Edit" method="post">
+    <form asp-action="Delete" method="post">
       <div class="flex-row">
         <label asp-for="Id" class="col-form-label-lg"></label>
         <input asp-for="Id" class="form-control" readonly />
       </div>
       <div class="flex-row">
         <label asp-for="ProductName" class="col-form-label-lg"></label>
-        <input asp-for="ProductName" class="form-control" />
+        <input readonly asp-for="ProductName" class="form-control" />
         <span asp-validation-for="ProductName" class="text-danger"></span>
       </div>
       <div class="flex-row">
         <label asp-for="Price" class="col-form-label-lg"></label>
-        <input asp-for="Price" class="form-control" type="number" />
+        <input readonly asp-for="Price" class="form-control" type="number" />
         <span asp-validation-for="Price" class="text-danger"></span>
       </div>
       @* Quantity *@
       <div class="flex-row">
         <label asp-for="Quantity" class="col-form-label-lg"></label>
-        <input asp-for="Quantity" class="form-control" type="number" />
+        <input readonly asp-for="Quantity" class="form-control" type="number" />
         <span asp-validation-for="Quantity" class="text-danger"></span>
       </div>
       <div class="flex-row mt-2">
-        @* <button type="button" value="Create" class="btn btn-primary">Create</button> *@
-        <input type="submit" value="Sửa" class="btn btn-primary" />
+        <input type="submit" value="Xóa" class="btn btn-primary" />
         <input type="submit" asp-action="Index" value="Xem danh sách sản phẩm" class="btn btn-success" />
       </div>
     </form>
